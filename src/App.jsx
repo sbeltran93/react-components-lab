@@ -5,7 +5,6 @@ import './WeatherForecast.css';
 const weatherForecasts = [
 
   
-  
   {
     day: 'Mon',
     img: 'http://res.cloudinary.com/jkeohan/image/upload/v1535732381/day.svg',
