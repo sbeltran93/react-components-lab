@@ -2,9 +2,9 @@ import React from "react";
 import WeatherForecast from "./WeatherForecast";
 import './App.css';
 import './WeatherForecast.css';
-const weatherForecasts = [
 
-  
+
+const weatherForecasts = [  
   {
     day: 'Mon',
     img: 'http://res.cloudinary.com/jkeohan/image/upload/v1535732381/day.svg',
@@ -46,8 +46,8 @@ const App = () => {
   return (
     <><h1>Local Weather</h1>
     <section>
-      {weatherForecasts.map((forecast) => (
-        <WeatherForecast forecast={forecast} />
+      {weatherForecasts.map((forecast, index) => (
+        <WeatherForecast key={index} forecast={forecast} />
       ))}
     </section>
     </>
